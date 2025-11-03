@@ -4,30 +4,120 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>E-RÉPUTATION IA — Protégez votre image Google</title>
-  <link rel="stylesheet" href="style.css" />
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
   <style>
-    body{background:#f9fafb;margin:0;font-family:'Inter',sans-serif;color:#202124;}
-    header{background:#fff;display:flex;justify-content:space-between;align-items:center;padding:1rem 2rem;box-shadow:0 1px 4px rgba(0,0,0,.08);}
-    header div{display:flex;align-items:center;gap:10px;}
-    .logo-square{background:#1A73E8;color:#fff;font-weight:700;border-radius:10px;width:40px;height:40px;display:flex;align-items:center;justify-content:center;}
-    nav a{margin-left:1.5rem;text-decoration:none;color:#202124;font-weight:500;}
-    nav a:hover,nav a.active{color:#1A73E8;}
-    .container{max-width:480px;margin:2rem auto;background:#fff;padding:2rem;border-radius:16px;box-shadow:0 4px 12px rgba(0,0,0,.05);text-align:center;}
+    :root {
+      --blue:#1A73E8;
+      --light:#F9FAFB;
+      --text:#202124;
+    }
+    *{box-sizing:border-box;margin:0;padding:0;}
+    body{
+      font-family:'Inter',sans-serif;
+      background:var(--light);
+      color:var(--text);
+      line-height:1.6;
+    }
+
+    header{
+      display:flex;
+      justify-content:space-between;
+      align-items:center;
+      background:#fff;
+      padding:1rem 2rem;
+      box-shadow:0 1px 4px rgba(0,0,0,.08);
+      position:sticky;
+      top:0;
+      z-index:10;
+    }
+
+    .logo-wrap{display:flex;align-items:center;gap:.8rem;}
+    .logo-square{
+      background:var(--blue);
+      color:#fff;
+      width:38px;height:38px;
+      border-radius:8px;
+      font-weight:700;
+      font-size:1rem;
+      display:flex;
+      justify-content:center;
+      align-items:center;
+    }
+    nav a{
+      text-decoration:none;
+      color:var(--text);
+      font-weight:500;
+      margin-left:1.5rem;
+    }
+    nav a:hover,nav a.active{color:var(--blue);}
+
+    main{
+      max-width:480px;
+      margin:2.5rem auto;
+      background:#fff;
+      padding:2.5rem 2rem;
+      border-radius:20px;
+      box-shadow:0 8px 20px rgba(0,0,0,.05);
+      text-align:center;
+    }
     h1{font-size:1.8rem;margin-bottom:1rem;}
-    .stars{color:#fbbc04;font-size:1.4rem;margin:0.5rem 0;}
-    .metrics{font-weight:600;margin-bottom:1.5rem;}
-    .features{display:flex;justify-content:space-around;margin-top:1.5rem;}
-    .features div{font-size:0.9rem;}
-    .btn-primary{display:inline-block;background:#1A73E8;color:#fff;padding:0.8rem 1.6rem;border-radius:8px;text-decoration:none;font-weight:600;margin-top:1.5rem;}
+    p{margin-bottom:1rem;color:#444;}
+    .stars{color:#fbbc04;font-size:1.3rem;margin:0.5rem 0 1rem;}
+    .rating{font-weight:600;margin-bottom:1.5rem;}
+    .mockup{
+      width:200px;
+      height:auto;
+      display:block;
+      margin:0 auto 1.8rem;
+      filter:drop-shadow(0 4px 6px rgba(0,0,0,0.1));
+    }
+
+    h2{margin:1.5rem 0 1rem;font-size:1.3rem;}
+    .features{
+      display:flex;
+      justify-content:space-between;
+      gap:.5rem;
+      background:#E8F0FE;
+      padding:1rem;
+      border-radius:12px;
+      margin-bottom:1.8rem;
+    }
+    .feature{
+      flex:1;
+      text-align:center;
+      font-size:.9rem;
+      color:#333;
+    }
+    .feature img{
+      width:38px;
+      height:38px;
+      margin-bottom:.5rem;
+    }
+
+    .btn-primary{
+      background:var(--blue);
+      color:#fff;
+      text-decoration:none;
+      font-weight:600;
+      padding:0.9rem 1.6rem;
+      border-radius:8px;
+      display:inline-block;
+    }
     .btn-primary:hover{background:#1557B0;}
-    footer{margin-top:3rem;text-align:center;font-size:0.9rem;color:#555;padding:1rem;}
-    footer a{color:#1A73E8;text-decoration:none;}
+
+    footer{
+      text-align:center;
+      font-size:.85rem;
+      color:#555;
+      padding:2rem 1rem 1rem;
+    }
+    footer a{color:var(--blue);text-decoration:none;}
   </style>
 </head>
 <body>
+
   <header>
-    <div>
+    <div class="logo-wrap">
       <div class="logo-square">EA</div>
       <span style="font-weight:700;">E-RÉPUTATION IA</span>
     </div>
@@ -38,23 +128,37 @@
     </nav>
   </header>
 
-  <main class="container">
+  <main>
     <h1>Protégez votre image Google dès aujourd’hui</h1>
     <p>Notre IA surveille, répond et améliore vos avis automatiquement.</p>
+
     <div class="stars">★★★★★</div>
-    <p class="metrics">Noté 4,8 / 5 par nos utilisateurs</p>
-    <img src="assets/hero.png" alt="Illustration Google" style="width:90%;max-width:340px;margin-bottom:1.5rem;">
-    <h2 style="margin-bottom:1rem;">Comment ça marche</h2>
+    <p class="rating">Noté 4,8 / 5 par nos utilisateurs</p>
+
+    <img src="assets/phone.png" alt="Mockup E-RÉPUTATION IA" class="mockup">
+
+    <h2>Comment ça marche</h2>
     <div class="features">
-      <div>🔍<br>Détection<br>des avis</div>
-      <div>🤖<br>Réponses IA</div>
-      <div>📊<br>Rapport<br>mensuel</div>
+      <div class="feature">
+        <img src="assets/icon-detect.svg" alt="Détection des avis">
+        <div>Détection<br>des avis</div>
+      </div>
+      <div class="feature">
+        <img src="assets/icon-ia.svg" alt="Réponses IA">
+        <div>Réponses IA</div>
+      </div>
+      <div class="feature">
+        <img src="assets/icon-report.svg" alt="Rapport mensuel">
+        <div>Rapport<br>mensuel</div>
+      </div>
     </div>
+
     <a href="offre.html" class="btn-primary">Découvrir notre offre</a>
   </main>
 
   <footer>
-    © 2025 E-RÉPUTATION IA | <a href="#">Mentions légales</a> | <a href="#">Confidentialité</a>
+    © 2025 E-RÉPUTATION IA — NOAH | <a href="#">Mentions légales</a>
   </footer>
+
 </body>
 </html>
