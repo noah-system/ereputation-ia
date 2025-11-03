@@ -1,98 +1,61 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="fr">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
   <title>E-RÉPUTATION IA — Protégez votre image Google</title>
-  <meta name="description" content="Notre IA surveille, répond et améliore vos avis automatiquement. Abonnement simple, sans engagement." />
+  <meta name="description" content="Surveillez et améliorez vos avis Google automatiquement pour 9,99 €/mois. Service sans engagement." />
   <link rel="stylesheet" href="style.css" />
-  <link rel="icon" href="assets/LOGO - E REPUTATION - IA.svg" />
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
 </head>
 
 <body>
-  <!-- HEADER -->
-  <header>
+
+<header class="site-header">
   <div class="container">
-    <div class="logo-section">
-      <img src="assets/LOGO - E REPUTATION - IA.svg" alt="Logo E-RÉPUTATION IA" class="logo">
-      <span class="brand-name">E-RÉPUTATION IA</span>
-    </div>
+    <img src="assets/LOGO - E RÉPUTATION - IA.svg" alt="Logo E-RÉPUTATION IA" class="logo">
     <nav>
-      <a href="#presentation">Présentation</a>
-      <a href="#offre">Offre</a>
-      <a href="#contact">Contact</a>
+      <a href="index.html" class="active">Présentation</a>
+      <a href="offre.html">Offre</a>
+      <a href="contact.html">Contact</a>
     </nav>
   </div>
 </header>
 
-  <!-- SECTION HERO -->
-  <section class="hero" id="presentation">
-    <h1>Protégez votre image Google dès aujourd’hui.</h1>
-    <p>Notre IA surveille, répond et améliore vos avis automatiquement.</p>
-    <div class="stars">⭐ ⭐ ⭐ ⭐ ⭐</div>
-    <p class="note">Noté 4,8/5 par nos utilisateurs</p>
-    <img src="assets/PHONE - E REPUTATION - IA.svg" alt="Mockup Google" class="hero-img" />
-  </section>
+<section class="hero">
+  <div class="hero-content">
+    <h1>Protégez votre image Google dès aujourd’hui</h1>
+    <p class="subtitle">Notre IA surveille, répond et améliore vos avis automatiquement.</p>
+    <div class="stars">⭐⭐⭐⭐⭐ <span>Noté 4,8/5 sur Google</span></div>
+    <a href="offre.html" class="btn-primary">Découvrir notre offre</a>
+  </div>
+  <img src="assets/PHONE - E RÉPUTATION - IA.svg" alt="Illustration avis Google" class="hero-img">
+</section>
 
-  <!-- SECTION COMMENT ÇA MARCHE -->
-  <section class="features">
-    <h2>Comment ça marche</h2>
-    <div class="cards">
-      <div class="card">
-        <img src="assets/DETECT - E REPUTATION - IA.svg" alt="Détection des avis" />
-        <h3>Détection des avis</h3>
-        <p>Notre système repère chaque nouvel avis Google en temps réel.</p>
-      </div>
-      <div class="card">
-        <img src="assets/IA - E REPUTATION - IA.svg" alt="Réponses IA" />
-        <h3>Réponses IA</h3>
-        <p>L’intelligence artificielle rédige des réponses personnalisées et bienveillantes.</p>
-      </div>
-      <div class="card">
-        <img src="assets/REPORT - E REPUTATION - IA.svg" alt="Rapport mensuel" />
-        <h3>Rapport mensuel</h3>
-        <p>Recevez un résumé clair de vos performances et de votre évolution.</p>
-      </div>
+<section class="features">
+  <h2>Comment ça marche</h2>
+  <div class="cards">
+    <div class="card">
+      <img src="assets/DETECT - E RÉPUTATION - IA.svg" alt="Détection des avis" class="icon">
+      <h3>Détection automatique</h3>
+      <p>Notre système repère chaque nouvel avis sur votre fiche Google en temps réel.</p>
     </div>
-    <a href="#offre" class="btn-primary">Découvrir notre offre</a>
-  </section>
-
-  <!-- SECTION OFFRE -->
-  <section class="pricing" id="offre">
-    <div class="price-card">
-      <h2>Formule unique</h2>
-      <p class="price">9,99 €/mois</p>
-      <p class="note">Sans engagement, paiement sécurisé</p>
-      <ul>
-        <li>✔ Surveillance automatique des avis</li>
-        <li>✔ Réponses IA personnalisées</li>
-        <li>✔ QR code + lien avis</li>
-        <li>❌ Aucun engagement</li>
-      </ul>
-      <a href="#contact" class="btn-primary">Je démarre maintenant</a>
+    <div class="card">
+      <img src="assets/IA - E RÉPUTATION - IA.svg" alt="Réponses IA" class="icon">
+      <h3>Réponses IA</h3>
+      <p>L’intelligence artificielle rédige des réponses personnalisées et bienveillantes.</p>
     </div>
-  </section>
-
-  <!-- SECTION CONTACT -->
-  <section class="contact" id="contact">
-    <h2>Une question ? Contactez-nous.</h2>
-    <form class="contact-form">
-      <input type="text" placeholder="Votre nom" required />
-      <input type="email" placeholder="Votre email" required />
-      <textarea placeholder="Votre message" rows="4" required></textarea>
-      <button type="submit">Envoyer</button>
-    </form>
-
-    <div class="contact-info">
-      <p>📧 contact@ereputation-ia.fr</p>
-      <p>📞 07 49 66 86 54</p>
-      <p>📍 5 rue des Moulins – 68700 Cernay</p>
+    <div class="card">
+      <img src="assets/REPORT - E RÉPUTATION - IA.svg" alt="Rapport mensuel" class="icon">
+      <h3>Rapport mensuel</h3>
+      <p>Recevez un résumé clair de vos performances et de votre évolution.</p>
     </div>
-  </section>
+  </div>
+</section>
 
-  <!-- FOOTER -->
-  <footer>
-    <p>© 2025 E-RÉPUTATION IA — NOAH | <a href="#">Mentions légales</a></p>
-  </footer>
+<footer>
+  <p>© 2025 E-RÉPUTATION IA – NOAH | <a href="#">Mentions légales</a></p>
+</footer>
+
 </body>
 </html>
