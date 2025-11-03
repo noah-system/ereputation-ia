@@ -1,126 +1,14 @@
 <!DOCTYPE html>
 <html lang="fr">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>E-RÉPUTATION IA — Protégez votre image Google</title>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
-  <style>
-    :root {
-      --blue:#1A73E8;
-      --light:#F9FAFB;
-      --text:#202124;
-    }
-    *{box-sizing:border-box;margin:0;padding:0;}
-    body{
-      font-family:'Inter',sans-serif;
-      background:var(--light);
-      color:var(--text);
-      line-height:1.6;
-    }
-
-    header{
-      display:flex;
-      justify-content:space-between;
-      align-items:center;
-      background:#fff;
-      padding:1rem 2rem;
-      box-shadow:0 1px 4px rgba(0,0,0,.08);
-      position:sticky;
-      top:0;
-      z-index:10;
-    }
-
-    .logo-wrap{display:flex;align-items:center;gap:.8rem;}
-    .logo-square{
-      background:var(--blue);
-      color:#fff;
-      width:38px;height:38px;
-      border-radius:8px;
-      font-weight:700;
-      font-size:1rem;
-      display:flex;
-      justify-content:center;
-      align-items:center;
-    }
-    nav a{
-      text-decoration:none;
-      color:var(--text);
-      font-weight:500;
-      margin-left:1.5rem;
-    }
-    nav a:hover,nav a.active{color:var(--blue);}
-
-    main{
-      max-width:480px;
-      margin:2.5rem auto;
-      background:#fff;
-      padding:2.5rem 2rem;
-      border-radius:20px;
-      box-shadow:0 8px 20px rgba(0,0,0,.05);
-      text-align:center;
-    }
-    h1{font-size:1.8rem;margin-bottom:1rem;}
-    p{margin-bottom:1rem;color:#444;}
-    .stars{color:#fbbc04;font-size:1.3rem;margin:0.5rem 0 1rem;}
-    .rating{font-weight:600;margin-bottom:1.5rem;}
-    .mockup{
-      width:200px;
-      height:auto;
-      display:block;
-      margin:0 auto 1.8rem;
-      filter:drop-shadow(0 4px 6px rgba(0,0,0,0.1));
-    }
-
-    h2{margin:1.5rem 0 1rem;font-size:1.3rem;}
-    .features{
-      display:flex;
-      justify-content:space-between;
-      gap:.5rem;
-      background:#E8F0FE;
-      padding:1rem;
-      border-radius:12px;
-      margin-bottom:1.8rem;
-    }
-    .feature{
-      flex:1;
-      text-align:center;
-      font-size:.9rem;
-      color:#333;
-    }
-    .feature img{
-      width:38px;
-      height:38px;
-      margin-bottom:.5rem;
-    }
-
-    .btn-primary{
-      background:var(--blue);
-      color:#fff;
-      text-decoration:none;
-      font-weight:600;
-      padding:0.9rem 1.6rem;
-      border-radius:8px;
-      display:inline-block;
-    }
-    .btn-primary:hover{background:#1557B0;}
-
-    footer{
-      text-align:center;
-      font-size:.85rem;
-      color:#555;
-      padding:2rem 1rem 1rem;
-    }
-    footer a{color:var(--blue);text-decoration:none;}
-  </style>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>E-RÉPUTATION IA — Surveillez vos avis Google automatiquement</title>
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
-
   <header>
-    <div class="logo-wrap">
-      <div class="logo-square">EA</div>
-      <span style="font-weight:700;">E-RÉPUTATION IA</span>
-    </div>
+    <img src="assets/LOGO - E REPUTATION - IA.svg" alt="Logo E-RÉPUTATION IA" class="logo">
     <nav>
       <a href="index.html" class="active">Présentation</a>
       <a href="offre.html">Offre</a>
@@ -128,37 +16,39 @@
     </nav>
   </header>
 
-  <main>
-    <h1>Protégez votre image Google dès aujourd’hui</h1>
-    <p>Notre IA surveille, répond et améliore vos avis automatiquement.</p>
+  <section class="hero">
+    <div class="hero-content">
+      <h1>Protégez votre image Google dès aujourd’hui</h1>
+      <p>Notre IA surveille, répond et améliore vos avis automatiquement.</p>
+      <div class="stars">⭐️⭐️⭐️⭐️⭐️ <span>Noté 4,8 / 5 par nos utilisateurs</span></div>
+      <img src="assets/PHONE - E REPUTATION - IA.svg" alt="Illustration Google" class="hero-img">
+    </div>
+  </section>
 
-    <div class="stars">★★★★★</div>
-    <p class="rating">Noté 4,8 / 5 par nos utilisateurs</p>
-
-    <img src="assets/phone.png" alt="Mockup E-RÉPUTATION IA" class="mockup">
-
+  <section class="features">
     <h2>Comment ça marche</h2>
-    <div class="features">
-      <div class="feature">
-        <img src="assets/icon-detect.svg" alt="Détection des avis">
-        <div>Détection<br>des avis</div>
+    <div class="cards">
+      <div class="card">
+        <img src="assets/DETECT - E REPUTATION - IA.svg" alt="Détection des avis" class="icon">
+        <h3>Détection des avis</h3>
+        <p>Notre système repère chaque nouvel avis Google en temps réel.</p>
       </div>
-      <div class="feature">
-        <img src="assets/icon-ia.svg" alt="Réponses IA">
-        <div>Réponses IA</div>
+      <div class="card">
+        <img src="assets/IA - E REPUTATION - IA.svg" alt="Réponses IA" class="icon">
+        <h3>Réponses IA</h3>
+        <p>L’intelligence artificielle rédige des réponses personnalisées et bienveillantes.</p>
       </div>
-      <div class="feature">
-        <img src="assets/icon-report.svg" alt="Rapport mensuel">
-        <div>Rapport<br>mensuel</div>
+      <div class="card">
+        <img src="assets/REPORT - E REPUTATION - IA.svg" alt="Rapport mensuel" class="icon">
+        <h3>Rapport mensuel</h3>
+        <p>Recevez un résumé clair de vos performances et de votre évolution.</p>
       </div>
     </div>
-
     <a href="offre.html" class="btn-primary">Découvrir notre offre</a>
-  </main>
+  </section>
 
   <footer>
-    © 2025 E-RÉPUTATION IA — NOAH | <a href="#">Mentions légales</a>
+    © 2025 E-RÉPUTATION IA – NOAH | <a href="#">Mentions légales</a>
   </footer>
-
 </body>
 </html>
